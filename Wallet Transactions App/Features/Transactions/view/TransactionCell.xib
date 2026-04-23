@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TransactionCell" rowHeight="121" id="KGk-i7-Jjw" customClass="TransactionCell" customModule="Wallet_Transactions_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="422" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="422" height="121"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QNP-Nx-DPX">
+                        <rect key="frame" x="16" y="16" width="390" height="89"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="gNk-lq-K2v">
+                                <rect key="frame" x="0.0" y="8" width="390" height="41"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQN-Ii-Lgb">
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yk6-9A-PTu">
+                                        <rect key="frame" x="245" y="0.0" width="145" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="OlR-k0-nNS"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Retry Payment">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.92499297021890947" green="0.31211650970319632" blue="0.33150349180768202" alpha="0.87493917890314876" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" systemColor="groupTableViewBackgroundColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6K-bq-Duw">
+                                <rect key="frame" x="0.0" y="52.666666666666671" width="390" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gNk-lq-K2v" firstAttribute="leading" secondItem="QNP-Nx-DPX" secondAttribute="leading" id="1iT-qx-qCw"/>
+                            <constraint firstItem="gNk-lq-K2v" firstAttribute="top" secondItem="QNP-Nx-DPX" secondAttribute="top" constant="8" id="Ffb-EM-b6E"/>
+                            <constraint firstAttribute="trailing" secondItem="gNk-lq-K2v" secondAttribute="trailing" id="KsN-6V-Cel"/>
+                            <constraint firstItem="W6K-bq-Duw" firstAttribute="trailing" secondItem="gNk-lq-K2v" secondAttribute="trailing" id="SBG-Rn-BoR"/>
+                            <constraint firstAttribute="bottom" secondItem="W6K-bq-Duw" secondAttribute="bottom" constant="16" id="VfC-02-kLe"/>
+                            <constraint firstItem="W6K-bq-Duw" firstAttribute="top" secondItem="gNk-lq-K2v" secondAttribute="bottom" constant="3.6666666666666643" id="jfg-ol-IYb"/>
+                            <constraint firstItem="W6K-bq-Duw" firstAttribute="leading" secondItem="gNk-lq-K2v" secondAttribute="leading" id="tQ5-ts-0qy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="QNP-Nx-DPX" secondAttribute="bottom" constant="16" id="3BX-JH-CbE"/>
+                    <constraint firstAttribute="trailing" secondItem="QNP-Nx-DPX" secondAttribute="trailing" constant="16" id="6Lx-ZY-Y08"/>
+                    <constraint firstItem="QNP-Nx-DPX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="qcV-yb-Ox6"/>
+                    <constraint firstItem="QNP-Nx-DPX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="uXA-3Z-pR6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="amountLabel" destination="WQN-Ii-Lgb" id="cIq-Wa-Y0A"/>
+                <outlet property="retryPaymentButton" destination="yk6-9A-PTu" id="I72-Ed-lDR"/>
+                <outlet property="statusLabel" destination="W6K-bq-Duw" id="hOq-QT-PDm"/>
+            </connections>
+            <point key="canvasLocation" x="-134.35114503816794" y="153.87323943661971"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
